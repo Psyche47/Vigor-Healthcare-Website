@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBWObJMkkui1i1-HTX0OBtnvV15aU9T1c8",
-  authDomain: "vigor-general-hospital.firebaseapp.com",
-  projectId: "vigor-general-hospital",
-  storageBucket: "vigor-general-hospital.appspot.com",
-  messagingSenderId: "1091726167032",
-  appId: "1:1091726167032:web:96ad998bbcbbee7e7b240d",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 export default firebaseConfig;
