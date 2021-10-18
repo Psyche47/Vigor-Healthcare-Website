@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "service_name": "Emergency Service",
+      "img": "https://i.ibb.co/4TwMtYt/emergency.jpg",
+      "description": "Vigor General Hospital Emergency Room (ER) provides non-stop life-saving care when required, 24 hours a day, seven days a week. ER has got all the life saving support for critically ill patients including ventilators and defibrillators. All doctors and nurses are specially trained to deal with all types of emergency patients. Square Hospital ER has fully equipped top of the line Mercedes Benz ambulance services with specially trained staffs. We also have our own Square Air Ambulance service, with brand new Bell 407 helicopter loaded with all life-saving equipments, to transport patients from any corner of the country. Patients get a fully integrated emergency care at Vigor Hospital Emergency Room.",
+      "additional1": "Specially trained physicians and nurses and other skilled and experienced staff",
+      "additional2": "Special equipments like ventilators, defibrillators to save lives",
+      "additional3": "Our trauma team provides the best possible medical care for traumatic injuries"
+    },
+    {
+      "id": 2,
+      "service_name": "Specialized Heart Center",
+      "img": "https://i.ibb.co/6NzfGB6/cardio.jpg",
+      "description": "Vigor Specialized Heart & Valve Center offers an array of services to our community members dealing with difficult cardiac issues. The multidisciplinary team provides a comprehensive structural heart disease program, offering diagnosis and treatment options for a full spectrum of conditions while focusing on the unique needs of each patient.",
+      "additional1": "Non-invasive cardiology services include-ECG, Echo Cardiography (Color Doppler, Pediatric & transesophageal) ETT, Holter Monitoring, Stress Echocardiography, Vascular Doppler.",
+      "additional2": "Highly sophisticated and modern Cath Labs with Digital Subtraction Angiogram facilities (DSA) which allows peripheral angiogram, angioplasty as well as Neurointervention and interventional Radiology.",
+      "additional3": "Coronary Care Unit (CCU) – fully equipped with high end cardiac monitors, defibrillators, ventilators, central oxygen and compressed air and suction."
+    },
+    {
+      "id": 3,
+      "service_name": "Diagnostic Center",
+      "img": "https://i.ibb.co/XW0cNSw/diagnostic.jpg",
+      "description": "We have an advanced service for diagnostic and medical needs. It is been pioneer in introducing world latest medical equipments and advanced technology to provide round the clock medical investigations and consultancy services",
+      "additional1": "Cobas 6000 (Full Automated Multi batch Biochemistry & Immunology Analyzer)",
+      "additional2": "GE Marquette 12 Channel ECG(Computer Analyzed & Interpreted)",
+      "additional3": "GE 24 Hours Holter Monitor (Marquette)"
+    },
+    {
+      "id": 4,
+      "service_name": "Kidney & Dialysis Centre",
+      "img": "https://i.ibb.co/B2T9Bxx/kidney.jpg",
+      "description": "The renal team provides diagnostic and treatment service for people with disease affecting kidney including ultrasonography guided real time kidney biopsy, central venous dialysis catheter placement. The centre also provides renal replacement therapy in the form of hemodialysis and peritoneal dialysis. The Vigor Kidney and Dialysis Centre comprise a 3-beded hemodialysis unit specially designed for children, pediatric ward and full time outpatient clinic (OPD).",
+      "additional1": "Pediatric SLED (Sustained low efficiency dialysis)",
+      "additional2": "Pediatric Acute Peritoneal Dialysis",
+      "additional3": "Ultrasonography guided real time kidney biopsy"
+    },
+    {
+      "id": 5,
+      "service_name": "Vigor Eye Centre",
+      "img": "https://i.ibb.co/znQ7sPg/eye-care.jpg",
+      "description": "Vigor Eye Center has provided comprehensive ophthalmology care for patients since 1832. Our skilled physicians and staff are dedicated to improving and preserving sight locally, regionally, and globally, and treat more than 350,000 patients a year.",
+      "additional1": "Humphrey visual field analysis: To diagnose the glaucoma and neurological lesion",
+      "additional2": "Pachymetry (CCT): To measure the corneal thickness",
+      "additional3": "Emergency Consultation"
+    },
+    {
+      "id": 6,
+      "service_name": "Vigor Neuroscience Center",
+      "img": "https://i.ibb.co/WVS9kyQ/neuroscience.jpg",
+      "description": "Vigor Neuroscience Centre has an absolutely new dedicated spacious OPD area with fully-equipped medical & surgical consultation & procedure rooms for all kinds of Neuro-medicine and Neurosurgical procedures. Large, comfortable suites, single & twin-sharing rooms with full time round the clock doctors and nursing support including dietitian supervised meals.",
+      "additional1": "Our Neurosurgeons are active participants in our Brain Tumor Center as well as our Epilepsy Center.",
+      "additional2": "We have established a comprehensive Epilepsy Center to aid in the precise diagnosis and treatment of epilepsy",
+      "additional3": "We are expert in the diagnosis and treatment of memory disorders."
+    },
+    {
+      "id": 7,
+      "service_name": "Vigor Dental Care",
+      "img": "https://i.ibb.co/nc5Khg9/dental.jpg",
+      "description": "Vigor Dental is a leading dental treatment provider in Dhaka, Bangladesh, with a specialized, Dental implant, Endodontic, Pediatric operative, Prosthodontic, oral surgery, and Orthodontic Center.",
+      "additional1": "Curettage Root Planning",
+      "additional2": "Treatment of teeth Irregularities",
+      "additional3": "Sliacing of Teeth"
+    },
+    {
+      "id": 8,
+      "service_name": "Vigor Dental Care",
+      "img": "https://i.ibb.co/zZsFbX3/diabetes.jpg",
+      "description": "Diabetes & Endocrinology Department provides state of the art medical care to individuals with endocrine disorders. Our skilled team of highly trained physicians, physician's assistants, dietitians and a diabetes specialist is dedicated to providing outstanding medical care in areas.",
+      "additional1": "Diabetes Treatment and Management",
+      "additional2": "Pituitary Disorders",
+      "additional3": "Cholesterol Disorders"
+    }
+  ]
