@@ -12,8 +12,8 @@
       "id": 2,
       "service_name": "Specialized Heart Center",
       "img": "https://i.ibb.co/6NzfGB6/cardio.jpg",
-      "description": "Vigor Specialized Heart & Valve Center offers an array of services to our community members dealing with difficult cardiac issues. The multidisciplinary team provides a comprehensive structural heart disease program, offering diagnosis and treatment options for a full spectrum of conditions while focusing on the unique needs of each patient.",
-      "additional1": "Non-invasive cardiology services include-ECG, Echo Cardiography (Color Doppler, Pediatric & transesophageal) ETT, Holter Monitoring, Stress Echocardiography, Vascular Doppler.",
+      "description": "The multidisciplinary  offering diagnosis and treatment options for a full spectrum of conditions while focusing on the unique needs of each patient.",
+      "additional1": "Non-invasive cardiology services include-ECG, Echo Cardiography (Color Doppler, Pediatric & transesophageal) ETT.",
       "additional2": "Highly sophisticated and modern Cath Labs with Digital Subtraction Angiogram facilities (DSA) which allows peripheral angiogram, angioplasty as well as Neurointervention and interventional Radiology.",
       "additional3": "Coronary Care Unit (CCU) – fully equipped with high end cardiac monitors, defibrillators, ventilators, central oxygen and compressed air and suction."
     },
@@ -22,7 +22,7 @@
       "service_name": "Diagnostic Center",
       "img": "https://i.ibb.co/XW0cNSw/diagnostic.jpg",
       "description": "We have an advanced service for diagnostic and medical needs. It is been pioneer in introducing world latest medical equipments and advanced technology to provide round the clock medical investigations and consultancy services",
-      "additional1": "Cobas 6000 (Full Automated Multi batch Biochemistry & Immunology Analyzer)",
+      "additional1": "Cobas 6000 (Full Automated Multi batch Biochemistry)",
       "additional2": "GE Marquette 12 Channel ECG(Computer Analyzed & Interpreted)",
       "additional3": "GE 24 Hours Holter Monitor (Marquette)"
     },

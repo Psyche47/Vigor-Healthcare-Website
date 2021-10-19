@@ -8,6 +8,7 @@ import Footer from "./Shared/Footer";
 import Login from "./Pages/Login/Login";
 import AuthProvider from "./Context/AuthProvider";
 import AboutUs from "./Pages/About/AboutUs";
+import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services></Services>
+            </Route>
+            <Route path="/details/:service_id">
+              <ServiceDetails></ServiceDetails>
             </Route>
             <Route path="/about">
               <AboutUs></AboutUs>

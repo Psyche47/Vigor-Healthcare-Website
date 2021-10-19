@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+import Service from "../Service/Service";
 
 const Services = () => {
+  const [services, setService] = useState([]);
+  useEffect(() => {
+    fetch("./services.json")
+      .then((res) => res.json())
+      .then((data) => setService(data));
+  }, []);
   return (
     <div>
-      <h2>This is services.</h2>
+      <Container>
+        <h5 className="display-5 rounded text-center text-light bg-dark p-3 mt-3">
+          All of Our Services
+        </h5>
+        <div className="d-flex justify-content-between">
+          <div className="row">
+            {services.slice(0, 6).map((service) => (
+              <Service key={service.id} service={service}></Service>
+            ))}
+          </div>
+        </div>
+      </Container>
     </div>
   );
 };
