@@ -7,7 +7,6 @@ import Header from "./Shared/Header";
 import Footer from "./Shared/Footer";
 import Login from "./Pages/Login/Login";
 import AuthProvider from "./Context/AuthProvider";
-import AboutUs from "./Pages/About/AboutUs";
 import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 import Register from "./Pages/Register/Register";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";

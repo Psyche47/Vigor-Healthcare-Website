@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
-//import { SiNamebase } from "react-icons/si";
+import { FaBriefcaseMedical } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { GrUserExpert } from "react-icons/gr";
 
 const Doctor = ({ doctor }) => {
   const { name, qualification1, qualification2, speciality, contact, img } =
@@ -20,12 +22,24 @@ const Doctor = ({ doctor }) => {
         />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
-          <Card.Text>{contact}</Card.Text>
+          <Card.Text>
+            <MdEmail size="1.5em" className="me-2" />
+            {contact}
+          </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
-          <ListGroupItem>{qualification1}</ListGroupItem>
-          <ListGroupItem>{qualification2}</ListGroupItem>
-          <ListGroupItem>Expertise: {speciality}</ListGroupItem>
+          <ListGroupItem>
+            <FaBriefcaseMedical size="1.5em" className="me-2" />
+            {qualification1}
+          </ListGroupItem>
+          <ListGroupItem>
+            <FaBriefcaseMedical size="1.5em" className="me-2" />
+            {qualification2}
+          </ListGroupItem>
+          <ListGroupItem>
+            <GrUserExpert size="1.5em" className="me-2" />
+            Expertise: {speciality}
+          </ListGroupItem>
         </ListGroup>
       </Card>
     </div>
