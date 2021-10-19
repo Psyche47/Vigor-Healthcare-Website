@@ -32,8 +32,8 @@ const Footer = () => {
                 <NavLink to="/faq" className="active">
                   Frequently Asked Questions
                 </NavLink>
-                <NavLink to="/about" className="active">
-                  About Us
+                <NavLink to="/doctors" className="active">
+                  Find A Doctor
                 </NavLink>
               </div>
             </Col>

@@ -12,6 +12,7 @@ import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 import Register from "./Pages/Register/Register";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 import NotFound from "./Pages/NotFound/NotFound";
+import Doctors from "./Pages/Doctors/Doctors";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
