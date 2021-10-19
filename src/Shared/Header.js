@@ -48,7 +48,9 @@ const Header = () => {
             {user?.email ? (
               <Navbar.Text>
                 Signed in as: <a href="#login">{user?.displayName}</a>
-                <Button variant="light" onClick={logOut}></Button>
+                <Button variant="light" onClick={logOut} className="ms-2">
+                  Sign Out
+                </Button>
               </Navbar.Text>
             ) : (
               <Nav.Link style={activeStyle} as={Link} to="/login">
