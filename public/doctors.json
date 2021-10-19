@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "DR. NARGIS ARA BEGUM",
+      "qualification1": "MBBS, FCPS (Paed)",
+      "qualification2": "Fellow New Born Medicine (Singapore)",
+      "speciality": "Kidney",
+      "contact": "nargis@yahoo.com",
+      "img": "https://i.ibb.co/xCTHfnD/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "PROF. DR. ZAHIDUL HAQ",
+      "qualification1": "MBBS, FCPS (Surgery)",
+      "qualification2": "Fellow Colorectal Surgery (Singapore)",
+      "speciality": "Cardiology",
+      "contact": "drzahirul@yahoo.com",
+      "img": "https://i.ibb.co/NNRwS82/2.png"
+    },
+    {
+      "id": 3,
+      "name": "DR. SHIRIN AKHTER",
+      "qualification1": "MBBS, FCPS (Surgery)",
+      "qualification2": "Paediatrics",
+      "speciality": "NEONATOLOGY",
+      "contact": "shirin12@gmail.com",
+      "img": "https://i.ibb.co/nmtrmV8/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PROF. DR. MD. NURUL ISLAM",
+      "qualification1": "MBBS, MRCP (UK)",
+      "qualification2": "FRCP (Edin)",
+      "speciality": "NEPHROLOGY",
+      "contact": "nurul23@gmail.com",
+      "img": "https://i.ibb.co/h9LVhpS/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "DR. TANIA MAHBUB",
+      "qualification1": "MBBS",
+      "qualification2": "MD (Nephrology)",
+      "speciality": "NEPHROLOGY",
+      "contact": "drtania@gmail.com",
+      "img": "https://i.ibb.co/zVn3Sw3/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "DR. TANVEER BIN LATIF",
+      "qualification1": "MBBS, MRCP (UK)",
+      "qualification2": "Specialty Certified in Nephrology (UK)",
+      "speciality": "Dental",
+      "contact": "tanveer203@gmail.com",
+      "img": "https://i.ibb.co/XbX77mJ/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "DR. SAMSUN NAHAR",
+      "qualification1": "MBBS, FCPS",
+      "qualification2": "MBBS, FCPS",
+      "speciality": "Neurology",
+      "contact": "samsun@gmail.com",
+      "img": "https://i.ibb.co/rZ2Jx1H/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "PROF. DR. ANISUR RAHMAN",
+      "qualification1": "MBBS (DMC), MSc (Canada",
+      "qualification2": "FCPS (Surgery), FRCS (Glasgow, UK)",
+      "speciality": "Eye",
+      "contact": "anisur33@gmail.com",
+      "img": "https://i.ibb.co/sggjHSg/8.jpg"
+    }
+  ]
