@@ -1,47 +1,48 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container, Button } from "react-bootstrap";
+import DoctorBanner from "./../../Images/Banner/Doctor-View.jpg";
+import Service from "./../../Images/Banner/Services.jpg";
+import About from "./../../Images/Banner/About-Us.jpg";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
+    <Container>
+      <Carousel fade>
+        <Carousel.Item className="carousel-banner">
+          <img className="d-block w-100" src={DoctorBanner} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="display-3">Vigor General Hospital</h3>
+            <h5 className="display-4 text-">At Vigor We Care</h5>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="carousel-banner">
+          <img className="d-block w-100" src={Service} alt="Second slide" />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
+          <Carousel.Caption>
+            <h3>We Offer A Plethora Of Services</h3>
+            <Link to="/services">
+              <Button variant="info">View All Our Services</Button>
+            </Link>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="carousel-banner">
+          <img
+            className="d-block w-100 carousel-img"
+            src={About}
+            alt="Third slide"
+          />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Carousel.Caption>
+            <h3>We're operating since 1996</h3>
+            <Link to="/about">
+              <Button variant="info">Know About Us</Button>
+            </Link>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </Container>
   );
 };
 

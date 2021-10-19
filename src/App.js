@@ -7,6 +7,7 @@ import Header from "./Shared/Header";
 import Footer from "./Shared/Footer";
 import Login from "./Pages/Login/Login";
 import AuthProvider from "./Context/AuthProvider";
+import AboutUs from "./Pages/About/AboutUs";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services></Services>
+            </Route>
+            <Route path="/about">
+              <AboutUs></AboutUs>
             </Route>
             <Route path="/login">
               <Login></Login>

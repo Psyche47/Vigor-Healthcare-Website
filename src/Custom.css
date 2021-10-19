@@ -2,20 +2,5 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: no-repeat
-    linear-gradient(
-      to bottom right,
-      rgb(60, 83, 252),
-      rgb(70, 88, 252),
-      rgb(80, 92, 252),
-      rgb(89, 97, 251),
-      rgb(99, 102, 251),
-      rgb(109, 107, 251),
-      rgb(119, 111, 251),
-      rgb(129, 116, 251),
-      rgb(139, 121, 251),
-      rgb(148, 126, 250),
-      rgb(158, 130, 250),
-      rgb(168, 135, 250)
-    );
+  background: url(/src/Images/full-bloom.png);
 }
