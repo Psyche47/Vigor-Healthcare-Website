@@ -16,9 +16,23 @@ const Login = () => {
     setUser,
     error,
   } = useAuth();
+
   const location = useLocation();
   const history = useHistory();
-  const redirect = location.state?.from || "/courses";
+  const redirect_uri = location.state?.from || "/home";
+
+  const handleGoogleLogin = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        history.push(redirect_uri);
+      })
+      .catch((err) => {
+        const errorMessage = err.message;
+        setError(errorMessage);
+      });
+  };
   return (
     <div className="text-center my-4">
       <h2>Please Login</h2>
@@ -71,28 +85,14 @@ const Login = () => {
         </Form>
       </div>
       <p className="mt-2">
-        <NavLink className="text-decoration-none" to="/signup">
+        <NavLink className="text-decoration-none" to="/register">
           Need an Account? Please Sign up!
         </NavLink>
       </p>
       <p className="mt-3">Or</p>
       <p> Login with</p>
       <div>
-        <button
-          onClick={() => {
-            signInWithGoogle()
-              .then((result) => {
-                const user = result.user;
-                setUser(user);
-                history.push(redirect);
-              })
-              .catch((err) => {
-                const errorMessage = err.message;
-                setError(errorMessage);
-              });
-          }}
-          className="btn"
-        >
+        <button onClick={handleGoogleLogin} className="btn">
           {" "}
           <FcGoogle size="1.5em" />
         </button>

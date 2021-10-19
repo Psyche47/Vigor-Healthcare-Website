@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <Container>
       <Carousel fade variant="dark">
-        <Carousel.Item className="carousel-banner" interval={2500}>
+        <Carousel.Item className="carousel-banner" interval={2000}>
           <img className="d-block w-100" src={DoctorBanner} alt="First slide" />
           <Carousel.Caption>
             <h1 className="text-info bg-dark rounded p-2">
@@ -16,7 +16,7 @@ const Banner = () => {
             </h1>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="carousel-banner" interval={2500}>
+        <Carousel.Item className="carousel-banner" interval={2000}>
           <img className="d-block w-100" src={Service} alt="Second slide" />
 
           <Carousel.Caption>
@@ -26,7 +26,7 @@ const Banner = () => {
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="carousel-banner" interval={2500}>
+        <Carousel.Item className="carousel-banner" interval={2000}>
           <img
             className="d-block w-100 carousel-img"
             src={About}

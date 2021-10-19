@@ -22,7 +22,6 @@ const SignUp = () => {
     signUpWithEmail,
     getName,
     setError,
-    sendVerifiedEmail,
     setUserName,
     error,
   } = useAuth();
@@ -39,9 +38,8 @@ const SignUp = () => {
             signUpWithEmail()
               .then((result) => {
                 setUserName();
-                sendVerifiedEmail();
                 alert("User has been Created!");
-                history.push("/login");
+                history.push("/home");
               })
               .catch((err) => {
                 const errorMessage = err.message;

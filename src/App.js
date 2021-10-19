@@ -11,6 +11,7 @@ import AboutUs from "./Pages/About/AboutUs";
 import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 import Register from "./Pages/Register/Register";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -34,13 +35,16 @@ function App() {
             <Route path="/about">
               <AboutUs></AboutUs>
             </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
           <Footer></Footer>
         </Router>
       </AuthProvider>
