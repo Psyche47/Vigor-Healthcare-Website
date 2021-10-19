@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Banner from "../Banner/Banner";
 import Service from "../Service/Service";
+import useServices from "../../Hooks/useServices";
 
 import "./Home.css";
 
 const Home = () => {
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    fetch("./services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  const [services] = useServices();
   return (
     <div>
       <Banner></Banner>

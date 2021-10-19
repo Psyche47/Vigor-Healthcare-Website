@@ -77,15 +77,15 @@ const Footer = () => {
             </Col>
             <Col>
               <h5 className="link-heading">Subscribe to our Newsletter</h5>
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your Email"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
                 />
-                <button type="button" class="btn btn-secondary">
+                <button type="button" className="btn btn-secondary">
                   Subscribe
                 </button>
               </div>
