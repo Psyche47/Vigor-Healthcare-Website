@@ -34,7 +34,7 @@ const Login = () => {
       });
   };
   return (
-    <div className="text-center my-4">
+    <div className="text-center my-4 mb-5">
       <h2>Please Login</h2>
       <p className=" mt-2">Login with Email & Password</p>
       <p className="text-danger text-center">{error}</p>
@@ -89,7 +89,7 @@ const Login = () => {
           Need an Account? Please Sign up!
         </NavLink>
       </p>
-      <p className="mt-3">Or</p>
+      <p className="mt-3">Or,</p>
       <p> Login with</p>
       <div>
         <button onClick={handleGoogleLogin} className="btn">

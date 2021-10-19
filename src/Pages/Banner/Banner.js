@@ -37,7 +37,7 @@ const Banner = () => {
             <h3 className="text-info bg-dark rounded p-2">
               We're operating since 1996
             </h3>
-            <Link to="/FAQ">
+            <Link to="/FAQgit">
               <Button variant="info">View Frequently Asked Questions</Button>
             </Link>
           </Carousel.Caption>

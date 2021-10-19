@@ -2,7 +2,7 @@
 
 ## A General Hospital that provides different types of treatment for the general people.
 
-### This project was made with React. [Live Site Link](https://learn-german-react.netlify.app/).
+### This project was made with React. [Live Site Link](https://vigor-general-hospital.web.app/).
 
 #### Contents of the site:
 
