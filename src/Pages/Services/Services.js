@@ -17,7 +17,7 @@ const Services = () => {
         </h5>
         <div className="d-flex justify-content-between">
           <div className="row">
-            {services.slice(0, 6).map((service) => (
+            {services.map((service) => (
               <Service key={service.id} service={service}></Service>
             ))}
           </div>

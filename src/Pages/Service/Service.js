@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { MdDescription } from "react-icons/md";
 
 const Service = ({ service }) => {
   const { id, service_name, description, additional1, img } = service;
@@ -21,14 +22,14 @@ const Service = ({ service }) => {
           <Card.Title>{service_name}</Card.Title>
         </Card.Body>
         <ListGroup className="list-group-flush">
-          <ListGroupItem>We Offer: {additional1.slice(0, 90)}</ListGroupItem>
-          <ListGroupItem>
-            Description: {description.slice(0, 150)}{" "}
-          </ListGroupItem>
+          <ListGroupItem>We Offer: {additional1.slice(0, 80)}</ListGroupItem>
+          <ListGroupItem>Details: {description.slice(0, 160)} </ListGroupItem>
           <ListGroupItem>
             <div className="d-flex justify-content-center">
               <Link to={`/details/${id}`}>
-                <Button variant="primary">View Full Details</Button>
+                <Button variant="dark" className="text-light">
+                  <MdDescription /> View Full Details
+                </Button>
               </Link>
             </div>
           </ListGroupItem>
