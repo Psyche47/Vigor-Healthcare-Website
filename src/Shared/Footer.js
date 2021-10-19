@@ -29,11 +29,11 @@ const Footer = () => {
                 <NavLink to="/services" className="active">
                   All Our Services
                 </NavLink>
-                <NavLink to="/faq" className="active">
-                  Frequently Asked Questions
-                </NavLink>
                 <NavLink to="/doctors" className="active">
                   Find A Doctor
+                </NavLink>
+                <NavLink to="/faq" className="active">
+                  Frequently Asked Questions
                 </NavLink>
               </div>
             </Col>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <div>
                   <SiFacebook size={30}></SiFacebook>
                   <a
-                    href="https://www.facebook.com/learn.german.language/"
+                    href="https://www.facebook.com/uhlbd/"
                     target="_blank"
                     rel="noreferrer"
                     className="active-social"
@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className="mt-2">
                   <SiYoutube size={30}></SiYoutube>
                   <a
-                    href="https://www.youtube.com/yourgermanteacher"
+                    href="https://youtu.be/cnVN2H1YGbk"
                     target="_blank"
                     rel="noreferrer"
                     className="active-social"
@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="mt-2">
                   <SiTwitter size={30}></SiTwitter>
                   <a
-                    href="https://twitter.com/learngerman"
+                    href="https://twitter.com/uhlbd?lang=en"
                     target="_blank"
                     rel="noreferrer"
                     className="active-social"
