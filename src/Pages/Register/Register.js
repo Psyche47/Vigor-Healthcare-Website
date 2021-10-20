@@ -30,16 +30,16 @@ const SignUp = () => {
     <div className="text-center my-4">
       <h2>Please Sign Up</h2>
       <p className=" mt-2">Sign Up with Email & Password</p>
-      <p className="text-danger text-center">{error}</p>
+      <h4 className="text-danger text-center">{error}</h4>
       <div className="w-25 mx-auto">
         <Form
           onSubmit={(e) => {
             e.preventDefault();
             signUpWithEmail()
               .then((result) => {
-                setUserName();
                 alert("User has been Created!");
                 history.push("/home");
+                setUserName();
               })
               .catch((err) => {
                 const errorMessage = err.message;
@@ -62,6 +62,7 @@ const SignUp = () => {
                   autoComplete="current-text"
                   id="name"
                   placeholder="Enter your name"
+                  required
                 />
               </InputGroup>
             </Col>

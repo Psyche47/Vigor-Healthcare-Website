@@ -33,13 +33,26 @@ const Login = () => {
         setError(errorMessage);
       });
   };
+
+  const handleEmailLogin = (e) => {
+    e.preventDefault();
+    signInWithEmail()
+      .then((result) => {
+        setUser(result.user);
+        history.push(redirect_uri);
+      })
+      .catch((err) => {
+        const errorMessage = "Invalid Email or Password, please try again.";
+        setError(errorMessage);
+      });
+  };
   return (
     <div className="text-center my-4 mb-5">
       <h2>Please Login</h2>
       <p className=" mt-2">Login with Email & Password</p>
       <p className="text-danger text-center">{error}</p>
       <div className="w-25 mx-auto">
-        <Form onSubmit={signInWithEmail}>
+        <Form onSubmit={handleEmailLogin}>
           <Row>
             <Col className="text-start">
               <Form.Label htmlFor="email" visuallyHidden>
@@ -50,11 +63,12 @@ const Login = () => {
                   <MdEmail size="1.5em" />
                 </InputGroup.Text>
                 <FormControl
-                  onClick={getEmail}
+                  onBlur={getEmail}
                   type="email"
                   autoComplete="current-email"
                   id="email"
                   placeholder="Enter your email address"
+                  required
                 />
               </InputGroup>
             </Col>
@@ -69,11 +83,12 @@ const Login = () => {
                   <FaLock size="1.5em" />
                 </InputGroup.Text>
                 <FormControl
-                  onClick={getPassword}
+                  onBlur={getPassword}
                   type="password"
                   autoComplete="current-password"
                   id="password"
                   placeholder="Enter your password"
+                  required
                 />
               </InputGroup>
             </Col>

@@ -28,7 +28,7 @@ const useFirebase = () => {
   const ClearError = () => {
     setTimeout(() => {
       setError("");
-    }, 5000);
+    }, 10000);
   };
 
   // clear error
@@ -43,12 +43,7 @@ const useFirebase = () => {
 
   //signInWithEmailAndPassword
   const signInWithEmail = (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((res) => {
-        setUser(res.user);
-      })
-      .catch((err) => setError(err.message));
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   // sign out
@@ -82,7 +77,13 @@ const useFirebase = () => {
   };
   // get password
   const getPassword = (e) => {
-    setPassword(e?.target?.value);
+    if (/^(?=.*[A-Z]).{6}/.test(e.target.value)) {
+      setPassword(e?.target?.value);
+    } else {
+      setError(
+        "Password must have one upper case letter and be of 6 characters long"
+      );
+    }
   };
 
   // signUp
