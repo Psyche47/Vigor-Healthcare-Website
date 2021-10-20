@@ -19,10 +19,10 @@ const ServiceDetails = () => {
           <Col lg={8} md={12} sm={12}>
             <img width="100%" src={matchedService?.img} alt="" />
           </Col>
-          <Col lg={4}>
+          <Col lg={4} className="border border-dark rounded">
             <h2>
               <BsCardHeading className="me-2" />
-              {matchedService?.service_name}
+              <u>{matchedService?.service_name}</u>
             </h2>
             <h4>
               <MdOutlineDescription size="1.5em" />
@@ -30,7 +30,7 @@ const ServiceDetails = () => {
             </h4>
             <h5>
               <AiOutlineOrderedList size="1.5em" className="me-2" />
-              Additional Details:
+              <u>Additional Details:</u>
             </h5>
             <h5>1. {matchedService?.additional1}</h5>
             <h5>2. {matchedService?.additional2}</h5>
