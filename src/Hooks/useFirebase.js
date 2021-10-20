@@ -67,8 +67,6 @@ const useFirebase = () => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
         setUser(currentUser);
-      } else {
-        setUser({});
       }
       setIsLoading(false);
     });

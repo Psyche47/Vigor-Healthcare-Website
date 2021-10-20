@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import Banner from "../Banner/Banner";
 import Service from "../Service/Service";
 import useServices from "../../Hooks/useServices";
-
 import "./Home.css";
 
 const Home = () => {
