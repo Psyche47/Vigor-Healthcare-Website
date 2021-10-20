@@ -24,6 +24,7 @@ const useFirebase = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   const ClearError = () => {
     setTimeout(() => {
@@ -48,12 +49,16 @@ const useFirebase = () => {
 
   // sign out
   const logOut = () => {
+    setIsLoading(true);
     signOut(auth)
       .then((result) => {
         setUser({});
       })
       .catch((err) => {
         setError(err.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -62,7 +67,10 @@ const useFirebase = () => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
         setUser(currentUser);
+      } else {
+        setUser({});
       }
+      setIsLoading(false);
     });
     return () => unsubscribe;
   }, [user]);
@@ -75,6 +83,7 @@ const useFirebase = () => {
   const getEmail = (e) => {
     setEmail(e?.target?.value);
   };
+
   // get password
   const getPassword = (e) => {
     if (/^(?=.*[A-Z]).{6}/.test(e.target.value)) {
@@ -112,6 +121,7 @@ const useFirebase = () => {
     signUpWithEmail,
     signInWithEmail,
     getName,
+    isLoading,
   };
 };
 

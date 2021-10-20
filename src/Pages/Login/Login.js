@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { NavLink, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
@@ -20,6 +20,7 @@ const Login = () => {
   const location = useLocation();
   const history = useHistory();
   const redirect_uri = location.state?.from || "/home";
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleGoogleLogin = () => {
     signInWithGoogle()
@@ -31,6 +32,9 @@ const Login = () => {
       .catch((err) => {
         const errorMessage = err.message;
         setError(errorMessage);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -44,6 +48,9 @@ const Login = () => {
       .catch((err) => {
         const errorMessage = "Invalid Email or Password, please try again.";
         setError(errorMessage);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
   return (
